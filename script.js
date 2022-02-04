@@ -10,10 +10,14 @@ function createDivs() {
         const squaresDiv = document.createElement("div");
         squaresDiv.classList.add("squaresDiv");
         //squaresDiv.textContent = "A";
+        squaresDiv.addEventListener("mouseenter", () => {
+            squaresDiv.style.backgroundColor = "black";
+        });
         container.appendChild(squaresDiv);
     }
     document.documentElement.style.setProperty("--rowNum", size);
     document.documentElement.style.setProperty("--colNum", size);
+
     return squaresDiv;
 }
 createDivs();
