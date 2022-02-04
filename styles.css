@@ -1,0 +1,17 @@
+:root {
+    --rowNum: ;
+    --colNum: ;
+}
+
+#container {
+    background-color: rosybrown;
+    display: grid;
+    height: 400px;
+    width: 400px;
+    grid-template-rows: repeat(var(--rowNum), minmax(0px, 1fr));
+    grid-template-columns: repeat(var(--colNum), minmax(0px, 1fr));
+}
+.squaresDiv {
+    border: solid black 1px;
+    background-color: red;
+}
